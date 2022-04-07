@@ -1,2 +1,12 @@
 body {
+  font-size: 12px;
+  font-size: 15px;
+  color: $default;
+  @extend %dmsans-400;
+}
+
+.wrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
