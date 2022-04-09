@@ -12,7 +12,7 @@
   }
 }
 
-.header-logo {
+.main-logo {
   display: flex;
   .glee-img {
     position: relative;
@@ -107,6 +107,111 @@
     position: absolute;
     top: 15px;
     left: 15px;
+  }
+}
+
+.footer-top {
+  padding: 70px 0;
+  border-bottom: 1px solid #dae4e9;
+  display: flex;
+  &__contact {
+    width: 180px;
+    margin-right: 120px;
+  }
+  &__sevices {
+    width: 130px;
+    margin-right: 170px;
+  }
+  &__account {
+    width: 100px;
+    margin-right: 200px;
+  }
+
+  &__forms {
+    max-width: 270px;
+  }
+
+  &__logo {
+    margin-bottom: 25px;
+  }
+
+  &__adress,
+  &__phone,
+  &__email {
+    display: block;
+    margin-bottom: 15px;
+    @extend %rubik-400;
+  }
+
+  &__title {
+    margin: 15px 0 25px;
+    line-height: 21px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #1f2044;
+    @extend %dmsans-700;
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: 15px;
+    @extend %rubik-400;
+  }
+  &__text {
+    color: $footer;
+    line-height: 24px;
+    margin-bottom: 35px;
+  }
+  &__form {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__form-email {
+    width: 170px;
+    height: 40px;
+    background-color: #fef7f0;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    color: #234969;
+    font-size: 12px;
+  }
+  &__form-email::placeholder {
+    color: #234969;
+    font-weight: bold;
+  }
+  &__form-btn {
+    width: 100px;
+    height: 40px;
+    background-color: #a3bbc8;
+    border: none;
+    color: #ffffff;
+  }
+}
+
+.footer-bottom {
+  padding: 30px 0 35px;
+  display: flex;
+  justify-content: space-between;
+
+  &__text,
+  &__item-link {
+    @extend %rubik-400;
+    color: $footer;
+  }
+
+  &__item-link {
+    padding: 0 7px;
+  }
+  &__item-link + .footer-bottom__item-link {
+    border-left: 1px solid $footer;
+    height: 17px;
+  }
+  &__item-link::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 7px;
   }
 }
 
