@@ -394,6 +394,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  grid-gap: 40px 30px;
   height: 840px;
 }
 .product-item {
@@ -408,6 +409,7 @@
 
   &__img-box {
     position: relative;
+    overflow: hidden;
   }
   &__link-box {
     position: absolute;
@@ -417,6 +419,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: translateX(300%);
+    // transition: all 0.3s;
   }
   &__link-item:hover {
     background-color: $btn;
@@ -435,7 +439,10 @@
   }
 
   &__link {
-    transition: all 0.3s;
+    display: inherit;
+    path {
+      transition: all 0.3s;
+    }
   }
 
   &__images {
@@ -457,6 +464,11 @@
     color: $btn;
     font-size: 16px;
     line-height: 40px;
+  }
+  &:hover {
+    .product-item__link-box {
+      transform: translateY(0);
+    }
   }
 }
 
