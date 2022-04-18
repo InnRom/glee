@@ -10,4 +10,6 @@ autoplaySpeed: 2000
 
 });
 
+ var mixer = mixitup(".product-items");
+
 });
