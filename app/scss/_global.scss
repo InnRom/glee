@@ -37,3 +37,18 @@ a {
   color: #191919;
   text-align: center;
 }
+
+button {
+  border: none;
+  background-color: #ffffff;
+  margin-right: 30px;
+  @extend %dmsans-700;
+  font-size: 16px;
+  font-weight: bold;
+  color: #8b8b8b;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    color: #292929;
+  }
+}
