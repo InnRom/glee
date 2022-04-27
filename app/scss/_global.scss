@@ -41,7 +41,7 @@ a {
 button {
   border: none;
   background-color: #ffffff;
-  margin-right: 30px;
+  // margin-right: 30px;
   @extend %dmsans-700;
   font-size: 16px;
   font-weight: bold;
@@ -50,5 +50,34 @@ button {
   transition: all 0.3s;
   &:hover {
     color: #292929;
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  &__list {
+    display: flex;
+  }
+  &__items {
+    @extend%rubik-400;
+    color: #83898f;
+    font-size: 14px;
+    line-height: 24px;
+    padding-right: 20px;
+    position: relative;
+    &::after {
+      content: "/";
+      position: absolute;
+      width: 7px;
+      height: 13px;
+      right: 7px;
+      top: 1px;
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
   }
 }
