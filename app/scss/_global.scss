@@ -86,3 +86,9 @@ button {
   color: $title;
   font-size: 36px;
 }
+
+.about__text {
+  @extend %rubik-400;
+  color: $title;
+  font-size: 16px;
+}

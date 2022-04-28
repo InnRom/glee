@@ -587,7 +587,9 @@
 
 .news-inner {
   position: relative;
-  top: 170px;
+  bottom: -170px;
+  margin-top: -170px;
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -791,9 +793,6 @@
     padding: 20px 0 30px;
   }
   &__text {
-    @extend %rubik-400;
-    color: $title;
-    font-size: 16px;
     line-height: 30px;
     padding-bottom: 50px;
   }
@@ -852,7 +851,7 @@
 }
 
 .team {
-  padding-bottom: -40px;
+  padding-bottom: 90px;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -867,9 +866,6 @@
     line-height: 32px;
   }
   &__text {
-    @extend %rubik-400;
-    color: $title;
-    font-size: 16px;
     line-height: 30px;
     margin-bottom: 60px;
   }
@@ -915,9 +911,6 @@
     margin: 25px 0 10px;
   }
   &__member-text {
-    @extend %rubik-400;
-    color: $title;
-    font-size: 16px;
     line-height: 30px;
   }
   &__social {
@@ -942,6 +935,33 @@
 
   &__social-google {
     padding: 11px 8px;
+  }
+}
+
+.condition {
+  padding: 110px 0 100px;
+
+  &__title {
+    @extend %rubik-500;
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+  &__list {
+    list-style-type: decimal-leading-zero;
+    margin-bottom: 60px;
+  }
+  &__item {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0 0 25px 30px;
+  }
+  &__text {
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 50px;
   }
 }
 
