@@ -4,7 +4,6 @@ body {
 }
 
 body {
-  font-size: 12px;
   font-size: 16px;
   color: $default;
   @extend %dmsans-400;
@@ -80,4 +79,10 @@ button {
       }
     }
   }
+}
+
+.about__title {
+  @extend %dmsans-700;
+  color: $title;
+  font-size: 36px;
 }
