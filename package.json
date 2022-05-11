@@ -16,9 +16,11 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^7.1.0",
+    "ion-rangeslider": "^2.3.1",
     "jqeury": "^0.0.1-security",
     "jquery": "^3.6.0",
     "mixitup": "^3.3.1",
+    "rateyo": "^2.3.2",
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {

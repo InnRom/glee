@@ -40,7 +40,6 @@ a {
 button {
   border: none;
   background-color: #ffffff;
-  // margin-right: 30px;
   @extend %dmsans-700;
   font-size: 16px;
   font-weight: bold;
@@ -91,4 +90,47 @@ button {
   @extend %rubik-400;
   color: $title;
   font-size: 16px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 85px 0 0;
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  // &__item {
+  //   width: 50px;
+  //   height: 50px;
+  // }
+  &__link {
+    max-width: 50px;
+    max-height: 50px;
+    padding: 16px;
+    border: 1px solid $btn;
+    margin-right: 15px;
+    @extend%rubik-400;
+    font-size: 16px;
+    color: $title;
+    &:hover {
+      background-color: $btn;
+      color: #ffffff;
+    }
+  }
+  &__next {
+    width: 70px;
+    height: 53px;
+    padding: 17px;
+    border: 1px solid $btn;
+    @extend%rubik-400;
+    font-size: 16px;
+
+    color: $title;
+    &:hover {
+      background-color: $btn;
+      color: #ffffff;
+    }
+  }
 }
