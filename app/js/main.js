@@ -52,7 +52,16 @@ $(function(){
     starWidth: "11px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
-    readOnly: true
+    readOnly: true,
+    spacing: "5px"
+  });
+
+$(".catalog-content__star").rateYo({
+    starWidth: "17px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true,
+    spacing: "10px"
   });
 
 });
