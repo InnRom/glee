@@ -1242,4 +1242,267 @@
   }
 }
 
+.products {
+  padding-top: 120px;
+}
+.products-page {
+  &__inner {
+    display: flex;
+  }
+
+  &__slide {
+    width: 570px;
+    margin-right: 30px;
+  }
+  &__content {
+    width: 570px;
+  }
+}
+
+.products-slide {
+  display: flex;
+  .slick-vertical .slick-slide {
+    height: 160px;
+    margin-bottom: 25px;
+  }
+  &__thumb {
+    width: 140px;
+    margin-right: 25px;
+  }
+  &__thumb-item {
+    width: 140px;
+    height: 160px;
+    margin-bottom: 25px;
+    border: 2px solid #f0f0f0;
+    background-color: #fefefe;
+    cursor: pointer;
+    img {
+      width: 140px;
+      height: 160px;
+      object-fit: cover;
+      padding: 4px;
+    }
+  }
+  &__big {
+    width: 385px;
+    height: 530px;
+  }
+  &__big-item {
+    width: 385px;
+    height: 530px;
+    border: 2px solid #f0f0f0;
+    background-color: #fefefe;
+    img {
+      padding: 65px 65px;
+    }
+  }
+}
+.products-content {
+  &__title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #333333;
+  }
+  &__star {
+    margin-bottom: 30px;
+  }
+  &__number {
+    font-size: 30px;
+    color: #333333;
+    margin: 30px 0;
+  }
+  &__text {
+    max-width: 535px;
+    margin: 30px 0;
+  }
+  &__form {
+    margin-bottom: 50px;
+  }
+  &__btn {
+    width: 205px;
+    height: 55px;
+    background-color: $btn;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-left: 15px;
+  }
+}
+
+.jq-number__field {
+  width: 150px;
+  border: 1px solid $btn;
+  transform: translateY(0);
+  position: relative;
+  padding: 0 50px;
+}
+.jq-number__field input {
+  width: 100%;
+  height: 52px;
+  border: none;
+  outline: none;
+  color: $title;
+  @extend %rubik-400;
+  text-align: center;
+  border-right: 1px solid $btn;
+  border-left: 1px solid $btn;
+  height: 52px;
+}
+.jq-number {
+  padding: 0;
+  position: relative;
+}
+.jq-number__spin {
+  position: absolute;
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.jq-number__spin.minus {
+  left: 20px;
+}
+
+.jq-number__spin.plus {
+  right: 20px;
+}
+
+.jq-number__spin::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 1px;
+  background-color: #333333;
+  width: 10px;
+  height: 1px;
+}
+.jq-number__spin.plus::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  background-color: #333333;
+  width: 1px;
+  height: 10px;
+}
+
+.products-info {
+  &__list {
+    margin-top: 50px;
+  }
+  &__item {
+    display: flex;
+  }
+  &__title,
+  &__text {
+    line-height: 30px;
+  }
+}
+.products-descr {
+  padding: 110px 0 120px;
+  &__links {
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+  &__item {
+    margin-right: 10px;
+    width: 240px;
+    height: 50px;
+    background-color: $top;
+    color: $title;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    &:hover > a {
+      color: #fff;
+    }
+    &:hover {
+      background-color: $btn;
+    }
+  }
+  &__links-item {
+    color: $title;
+    font-size: 18px;
+  }
+  &__text {
+    color: $title;
+    line-height: 30px;
+  }
+}
+
+.products-relate {
+  padding-bottom: 90px;
+  &__title {
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: $title;
+    text-align: start;
+    margin-bottom: 60px;
+  }
+  &__slide {
+    max-width: 100%;
+    min-width: 0;
+    position: relative;
+  }
+  .product-item {
+    margin-right: 30px;
+  }
+
+  .product-item__img-box {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 6px 7px 3px rgb(37 37 37 / 5%);
+    width: 270px;
+    height: 380px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    padding: 0 15px;
+  }
+
+  .slick-slider {
+    min-width: 0;
+    position: relative;
+  }
+
+  .slick-list {
+    overflow: hidden;
+    padding: 15px;
+  }
+  .slick-arrow {
+    position: absolute;
+    top: -90px;
+    right: 2px;
+    font-size: 0;
+    border: 2px solid $top;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    &:hover {
+      border: 2px solid $btn;
+    }
+  }
+  .slick-prev {
+    right: 70px;
+    background-image: url(../images/icon/products-arrow-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .slick-next {
+    margin-left: 20px;
+    background-image: url(../images/icon/products-arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .slick-prev {
+    right: 60px;
+  }
+}
+
 @import "media";
