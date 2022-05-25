@@ -74,7 +74,7 @@ $('.select-style, .products-content__num').styler();
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
     readOnly: true,
-    spacing: "5px"
+    spacing: "5px",
   });
 
   $(".catalog-content__star").rateYo({
