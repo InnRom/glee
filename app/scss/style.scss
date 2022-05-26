@@ -999,7 +999,7 @@
     border-bottom: 3px solid $btn;
     width: 40px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     margin-left: 12px;
   }
 }
@@ -1606,4 +1606,245 @@
     font-size: 12px;
   }
 }
+.blog-one {
+  h6 {
+    @extend %rubik-500;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  p {
+    margin-bottom: 40px;
+    line-height: 30px;
+  }
+
+  blockquote {
+    width: 100%;
+    height: 130px;
+    background-color: $top;
+    border-left: 7px solid $btn;
+    padding: 20px 0 25px 30px;
+    line-height: 30px;
+    position: relative;
+  }
+
+  &__quote {
+    position: absolute;
+    left: 70px;
+  }
+
+  &__quote::before {
+    content: " ";
+    width: 20px;
+    border-top: 4px solid $btn;
+    position: absolute;
+    bottom: 13px;
+    left: -38px;
+    padding-right: 20px;
+  }
+
+  &__left-img {
+    width: 325px;
+    height: 210px;
+    float: left;
+    margin: 40px 30px 40px 0;
+  }
+
+  &__right-img {
+    width: 325px;
+    height: 210px;
+    float: right;
+    margin: 40px 0 40px 30px;
+  }
+
+  h5 {
+    @extend %rubik-500;
+    font-size: 18px;
+    margin: 77px 0 25px;
+  }
+
+  &__text {
+    padding-bottom: 30px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 125px;
+    border: 2px solid #ebebeb;
+    border-left: none;
+    border-right: none;
+  }
+
+  &__author {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image {
+    width: 76px;
+    height: 76px;
+    margin: 20px 25px 20px 0;
+  }
+
+  &__info {
+    margin: 35px 0;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+
+  &__info-text {
+    color: #666666;
+  }
+
+  &__links {
+    margin: 35px 0;
+  }
+
+  &__tag,
+  &__share {
+    color: #333333;
+    margin-bottom: 15px;
+  }
+
+  &__link1 {
+    margin-left: 25px;
+  }
+
+  &__social {
+    margin-left: 15px;
+  }
+}
+.comments {
+  &__title {
+    padding-top: 60px;
+    padding-bottom: 25px;
+    font-weight: 700;
+    font-style: 24px;
+  }
+  &__inner {
+    margin: 25px 0 20px 0;
+    display: flex;
+  }
+  &__inner-img {
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+  }
+  &__inner-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  &__inner-name {
+    font-weight: 700;
+  }
+  &__inner-date {
+    font-size: 14px;
+  }
+  .comments__inner-text {
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  &__inner-reply {
+    display: inline-block;
+    padding-right: 20px;
+    color: $title;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50px;
+      bottom: -6px;
+      width: 30px;
+      height: 20px;
+      background-image: url("../images/icon/arrow-desing.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  &__right {
+    margin-left: 125px;
+    width: 100%;
+    border: 2px solid #e0e0e0;
+    border-left: 0;
+    border-right: 0;
+    padding: 25px 0;
+  }
+}
+
+.comments-form {
+  padding-top: 65px;
+  &__title {
+    font-weight: 700;
+    font-style: 24px;
+  }
+  &__box-input {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text-input {
+    margin-right: 25px;
+    width: 400px;
+    height: 45px;
+    padding: 0 35px 0 15px;
+    border: 1px solid #e5e5e5;
+    color: #999999;
+    outline: none;
+    &:hover {
+      border: 1px solid $btn;
+    }
+  }
+
+  &__text-name {
+    background: url("../images/icon/commentsicon1.svg") no-repeat scroll 17px
+      17px;
+    padding-left: 20px;
+    background-position: 370px;
+  }
+  &__text-mail {
+    background: url("../images/icon/commentsicon2.svg") no-repeat scroll 17px
+      17px;
+    padding-left: 20px;
+    background-position: 370px;
+  }
+  &__textarea {
+    padding: 20px 35px;
+    width: 830px;
+    height: 120px;
+    background: url("../images/icon/commentsicon3.svg") no-repeat scroll 17px
+      17px;
+    padding-left: 20px;
+    background-position: 800px 16px;
+    outline: none;
+    &:hover {
+      border: 1px solid $btn;
+    }
+  }
+  &__btn {
+    width: 200px;
+    height: 50px;
+    background-color: $btn;
+    color: #fff;
+    margin-top: 40px;
+  }
+}
+
+.blog-one__aside {
+  .filter-post {
+    &__text {
+      margin-bottom: 10px;
+      line-height: 20px;
+    }
+  }
+}
+
 @import "media";
