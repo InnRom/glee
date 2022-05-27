@@ -92,3 +92,25 @@
     color: $btn;
   }
 }
+
+@media (max-width: 1150px) {
+  .design-info {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 30px;
+
+    &__image {
+      position: relative;
+      bottom: 85px;
+      width: 150px;
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .design-inner {
+    padding: 40px 0 40px;
+  }
+}
