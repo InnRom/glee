@@ -1,5 +1,9 @@
 $(function(){
 
+$('.menu__btn').on('click', function(){
+  $('.menu__list').toggleClass('menu__list--active');
+});
+
 $('.contact-inner__item').on('click',function(){
   $('.contact-inner__item').removeClass('contact-inner__item--active');
   $(this).addClass('contact-inner__item--active');
