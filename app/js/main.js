@@ -1,6 +1,9 @@
 $(function(){
 
-
+$('.contact-inner__item').on('click',function(){
+  $('.contact-inner__item').removeClass('contact-inner__item--active');
+  $(this).addClass('contact-inner__item--active');
+});
 
   $('.products-slide__thumb').slick({
     asNavFor: '.products-slide__big',
@@ -51,6 +54,7 @@ $(function(){
 
 $(function(){
 
+
 $('.select-style, .products-content__num').styler();
 
   $(".filter-price__input").ionRangeSlider({
@@ -98,8 +102,11 @@ $('.products-relate__slide').slick({
   lazyLoad: 'ondemand',
   slidesToShow: 4,
   slidesToScroll: 1,
-  // autoplay:true,
-  // arrows:false,
+  
 });
+
+
+
+    
 
 });

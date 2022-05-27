@@ -30,7 +30,7 @@
     padding-left: 30px;
   }
   &__list-link {
-    @extend %rubik-500;
+    font-weight: 500;
     color: $default;
     font-size: 15px;
     font-weight: bold;
@@ -142,7 +142,6 @@
   &__email {
     display: block;
     margin-bottom: 15px;
-    @extend %rubik-400;
   }
 
   &__title {
@@ -157,7 +156,6 @@
   &__link {
     display: block;
     margin-bottom: 15px;
-    @extend %rubik-400;
   }
   &__text {
     color: $footer;
@@ -202,7 +200,6 @@
 
   &__text,
   &__item-link {
-    @extend %rubik-400;
     color: $footer;
   }
 
@@ -227,7 +224,7 @@
   padding: 30px 0;
   text-align: center;
   &__title {
-    @extend%rubik-300;
+    font-weight: 300;
     font-size: 36px;
     line-height: 24px;
     color: #222933;
@@ -268,14 +265,13 @@
 
   &__title {
     color: $title;
-    @extend %rubik-500;
+    font-weight: 500;
     font-size: 70px;
     line-height: 72px;
     max-width: 400px;
     padding-bottom: 40px;
   }
   &__text {
-    @extend %rubik-400;
     color: #436372;
     font-size: 18px;
     line-height: 30px;
@@ -290,7 +286,7 @@
     height: 60px;
     background-color: $btn;
     padding: 20px 25px 20px 15px;
-    @extend %rubik-500;
+    font-weight: 500;
     font-size: 15px;
     line-height: 12px;
     color: #ffffff;
@@ -313,7 +309,7 @@
         background-color: #fde3cc;
         width: 30px;
         height: 30px;
-        @extend %rubik-500;
+        font-weight: 500;
         color: #667983;
       }
     }
@@ -509,9 +505,7 @@
     margin-bottom: 20px;
   }
   &__text {
-    @extend%rubik-400;
     color: #334b57;
-    font-size: 16px;
     line-height: 25px;
     margin-bottom: 30px;
   }
@@ -523,7 +517,6 @@
     border-radius: 5px;
     width: 180px;
     height: 60px;
-    @extend%rubik-400;
     font-size: 15px;
     font-weight: bold;
     color: $default;
@@ -685,7 +678,6 @@
   max-width: 470px;
   margin: 0 auto 155px;
   &__lable {
-    @extend%rubik-400;
     font-size: 14px;
     line-height: 38px;
     color: $default;
@@ -701,7 +693,7 @@
   }
   &__btn {
     background-color: $btn;
-    @extend%rubik-500;
+    font-weight: 500;
     font-size: 18px;
     color: #ffffff;
     width: 100%;
@@ -712,26 +704,27 @@
     display: flex;
     justify-content: space-between;
     margin: 30px 0;
-    @extend%rubik-400;
     font-size: 14px;
     line-height: 48px;
     color: $default;
     border-bottom: solid 2px #f6f6f6;
   }
-
+  &__label-link {
+    margin-left: 180px;
+    color: $default;
+  }
   &__links {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   &__link {
-    @extend%rubik-400;
     font-size: 14px;
     line-height: 24px;
     color: $default;
   }
   &__link-btn {
-    @extend%rubik-500;
+    font-weight: 500;
     font-size: 18px;
     color: $title;
     border: solid 2px $btn;
@@ -780,12 +773,11 @@
     align-items: center;
   }
   &__span {
-    @extend %rubik-700;
+    font-weight: 700;
     font-size: 140px;
     color: $btn;
   }
   &__list-item {
-    @extend %rubik-400;
     line-height: 30px;
     color: $title;
     margin-left: 25px;
@@ -943,7 +935,7 @@
   padding: 110px 0 100px;
 
   &__title {
-    @extend %rubik-500;
+    font-weight: 500;
     font-size: 24px;
     line-height: 40px;
     margin-bottom: 25px;
@@ -953,14 +945,10 @@
     margin-bottom: 60px;
   }
   &__item {
-    @extend %rubik-400;
-    font-size: 16px;
     line-height: 30px;
     margin: 0 0 25px 30px;
   }
   &__text {
-    @extend %rubik-400;
-    font-size: 16px;
     line-height: 30px;
     margin-bottom: 50px;
   }
@@ -1021,9 +1009,7 @@
   &__checkbox {
     display: flex;
     justify-content: space-between;
-    @extend %rubik-400;
     color: $title;
-    font-size: 16px;
     padding: 15px;
   }
 }
@@ -1035,7 +1021,6 @@
     padding-top: 15px;
   }
   span {
-    @extend %rubik-400;
     font-size: 14px;
     color: $title;
   }
@@ -1101,8 +1086,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    @extend %rubik-400;
-    font-size: 16px;
   }
   &__text {
     color: $title;
@@ -1132,8 +1115,7 @@
 
   &__subtitle,
   &__text {
-    color: #333333;
-    @extend %rubik-400;
+    color: $text;
   }
   &__subtitle {
     font-size: 14px;
@@ -1179,17 +1161,17 @@
   }
   &__title {
     font-size: 40px;
-    color: #333333;
+    color: $text;
   }
   &__star {
     margin: 20px 0;
   }
   &__number {
     font-size: 30px;
-    color: #333333;
+    color: $text;
   }
   &__text {
-    color: #333333;
+    color: $text;
     line-height: 30px;
     max-width: 410px;
     margin: 30px 0 40px;
@@ -1342,7 +1324,7 @@
   border: none;
   outline: none;
   color: $title;
-  @extend %rubik-400;
+  font-weight: 400;
   text-align: center;
   border-right: 1px solid $btn;
   border-left: 1px solid $btn;
@@ -1374,7 +1356,7 @@
   position: absolute;
   top: 5px;
   left: 1px;
-  background-color: #333333;
+  background-color: $text;
   width: 10px;
   height: 1px;
 }
@@ -1383,7 +1365,7 @@
   position: absolute;
   top: 1px;
   left: 5px;
-  background-color: #333333;
+  background-color: $text;
   width: 1px;
   height: 10px;
 }
@@ -1543,7 +1525,7 @@
   }
   &__title {
     font-size: 36px;
-    color: #333333;
+    color: $text;
     margin-top: -70px;
     padding: 35px 0;
   }
@@ -1598,7 +1580,7 @@
   &__text {
     margin-bottom: 10px;
     font-size: 14px;
-    color: #333333;
+    color: $text;
   }
   &__span {
     text-transform: uppercase;
@@ -1689,7 +1671,7 @@
     margin: 20px 25px 20px 0;
   }
 
-  &__info {
+  &__name {
     margin: 35px 0;
   }
 
@@ -1710,7 +1692,7 @@
 
   &__tag,
   &__share {
-    color: #333333;
+    color: $text;
     margin-bottom: 15px;
   }
 
@@ -1846,5 +1828,132 @@
     }
   }
 }
+.contact {
+  padding: 115px 0 125px 0;
+}
+.contact-inner {
+  &__subtitle {
+    text-align: center;
+    @extend %poppins-700;
+    color: $btn;
+    margin-bottom: 15px;
+  }
+  &__title {
+    text-align: center;
+    @extend %dmsans-700;
+    color: $default;
+    font-size: 35px;
+    margin-bottom: 65px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 115px;
+  }
+  &__item {
+    width: 370px;
+    height: 390px;
+    margin-right: 25px;
+    background-color: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px 0 75px;
+  }
+  &__item-mail {
+    border: 2px solid $btn;
+  }
 
+  &__link {
+    margin-bottom: 65px;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+  }
+  &__mail {
+    background-color: $btn;
+  }
+  &__img {
+    position: absolute;
+    left: 21px;
+    bottom: 23px;
+  }
+
+  &__item-title {
+    margin-bottom: 25px;
+  }
+  &__text {
+    text-align: center;
+    width: 265px;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__form {
+    width: 620px;
+    margin-bottom: 50px;
+  }
+  &__input-text {
+    margin: 0 8px 25px 0;
+    width: 300px;
+    height: 50px;
+    border: none;
+    background-color: #fafafa;
+    color: #77788d;
+    padding: 0 45px 0 20px;
+    outline: none;
+  }
+  &__input-name {
+    background-image: url("../images/icon/name_message.svg");
+    background-size: 17px 17px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-position: 264px;
+  }
+  &__input-mail {
+    background-image: url("../images/icon/mail_message.svg");
+    background-size: 17px 17px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-position: 264px;
+  }
+  &__textarea-text {
+    width: 620px;
+    height: 180px;
+    border: none;
+    background-color: #fafafa;
+    color: #77788d;
+    margin-bottom: 30px;
+    padding: 15px 45px 0 20px;
+    outline: none;
+  }
+
+  &__textarea-message {
+    background-image: url("../images/icon/message.svg");
+    background-size: 17px 17px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    background-position: 580px 16px;
+  }
+
+  &__map {
+    max-width: 500px;
+  }
+  &__btn {
+    width: 200px;
+    height: 50px;
+    @extend %poppins-700;
+    text-transform: uppercase;
+    background-color: $btn;
+    color: #fff;
+    border-radius: 5px;
+  }
+}
+#map {
+  width: 100%;
+  height: 335px;
+}
 @import "media";
