@@ -1,0 +1,67 @@
+.blog {
+  padding: 110px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    width: 870px;
+  }
+  &__item {
+    padding-bottom: 70px;
+  }
+  &__item-images {
+    padding-bottom: -70px;
+  }
+  &__item-info {
+    width: 280px;
+    height: 70px;
+    background-color: $btn;
+    color: #fff;
+    font-size: 12px;
+    padding: 25px 39px;
+    transform: translateY(-70px);
+    display: flex;
+    align-items: center;
+  }
+  &__item-date,
+  &__item-author {
+    margin-right: 0;
+    color: #fff;
+  }
+  &__item-author {
+    margin-left: 15px;
+  }
+  &__item-title {
+    font-size: 36px;
+    color: $text;
+    margin-top: -70px;
+    padding: 35px 0;
+  }
+  &__item-text {
+    max-width: 790px;
+    padding-bottom: 35px;
+  }
+  &__item-links {
+    width: 180px;
+    height: 60px;
+    padding: 15px 20px;
+    border: 1px solid $btn;
+    color: $btn;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item-arrow {
+    width: 25px;
+    height: 11px;
+  }
+}
+
+.blog__aside {
+  width: 270px;
+}
+.pagination {
+  justify-content: flex-start;
+  padding-top: 0;
+}

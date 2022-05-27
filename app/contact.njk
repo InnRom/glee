@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/contact.min.css" />
+  <title>Document</title>
+</head>
+
+<body>
+   {% include 'app/module/_header/_header.html' %}
+  <main class="main">
+    
+    {% include 'app/module/_top/_top.html' %}
+    {% include 'app/module/_contact/_contact.html' %}
+    {% include 'app/module/_news/_news.html' %}
+
+
+
+    
+  </main>
+   {% include 'app/module/_footer/_footer.html' %}
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly" defer></script>
+
+  <script>
+
+    function initMap() {
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 10,
+        center: { lat: 28.01861275186386, lng: -82.53078810914533 },
+        disableDefaultUI: true,
+      });
+    }
+
+    window.initMap = initMap;
+  </script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
