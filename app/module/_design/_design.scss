@@ -93,24 +93,166 @@
   }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
   .design-info {
-    padding-top: 60px;
+    &__title {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+    &__image {
+      bottom: -34px;
+      width: 200px;
+      height: 300px;
+    }
+  }
+
+  .design-inner {
+    &__item {
+      background-position: center right;
+    }
+    &__descr {
+      padding-top: 15px;
+      padding-left: 15px;
+    }
+    &__subtitle {
+      margin-bottom: 0;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .design-info {
+    padding-top: 40px;
+
+    &__link {
+      width: 100px;
+      height: 45px;
+    }
+
+    &__item {
+      height: 300px;
+      width: 100%;
+    }
+
+    &__image {
+      bottom: 15px;
+      width: 200px;
+      height: 300px;
+    }
+    &__descr {
+      padding: 20px 20px 0 0;
+    }
+  }
+
+  .design-inner {
+    padding: 50px 0 50px;
+  }
+}
+
+@media (max-width: 950px) {
+  .design-info {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     column-gap: 30px;
+    width: 100%;
 
     &__image {
-      position: relative;
-      bottom: 85px;
-      width: 150px;
-      height: 300px;
+      bottom: -14px;
+      width: 170px;
+      height: 250px;
+    }
+
+    &__link {
+      width: 180px;
+      height: 60px;
+    }
+  }
+  .design-inner {
+    &__items {
+      min-height: 390px;
+      grid-gap: 20px;
+    }
+    &__item {
+      background-size: contain;
     }
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 800px) {
   .design-inner {
-    padding: 40px 0 40px;
+    &__items {
+      min-height: 290px;
+      grid-gap: 10px;
+    }
+    &__descr {
+      padding-top: 8px;
+      padding-left: 40px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .design-inner {
+    &__items {
+      overflow-y: auto;
+      grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+      grid-gap: 10px;
+    }
+    &__descr {
+      padding-top: 8px;
+      padding-left: 9px;
+    }
+    &__subtitle {
+      font-size: 14px;
+    }
+    &__text {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .design-inner {
+    .title {
+      font-size: 30px;
+    }
+    button {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .design-info {
+    &__item {
+      height: 250px;
+      flex-wrap: wrap;
+    }
+
+    &__image {
+      display: none;
+    }
+
+    &__link {
+      width: 100px;
+      height: 45px;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .design-inner {
+    .title {
+      font-size: 25px;
+    }
+    button {
+      font-size: 12px;
+    }
   }
 }
