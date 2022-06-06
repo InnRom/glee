@@ -182,3 +182,25 @@
     }
   }
 }
+
+@media (max-width: 370px) {
+  .menu {
+    &__list {
+      top: 200px;
+    }
+  }
+  .user-nav__search {
+    top: 26px;
+  }
+
+  .user-nav__menu-btn {
+    top: 1px;
+    right: -72px;
+    width: 180px;
+    border-radius: 30px;
+
+    .user-nav__menu-icon {
+      left: 79px;
+    }
+  }
+}

@@ -7,7 +7,6 @@
     line-height: 38px;
     color: $default;
     display: block;
-    margin-bottom: 20px;
   }
   &__input {
     display: block;
@@ -28,6 +27,7 @@
   &__error {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 30px 0;
     font-size: 14px;
     line-height: 48px;
@@ -35,7 +35,6 @@
     border-bottom: solid 2px #f6f6f6;
   }
   &__label-link {
-    margin-left: 180px;
     color: $default;
   }
   &__links {
@@ -57,5 +56,39 @@
     height: 60px;
     padding: 17px 135px;
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .partners-login {
+    object-fit: contain;
+    width: 100%;
+    height: 130px;
+
+    img {
+      max-width: 80%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .modal {
+    &__error {
+      flex-direction: column;
+    }
+    &__link-btn {
+      padding: 17px 50px;
+      text-align: center;
+    }
+  }
+
+  .partners-login {
+    height: 130px !important;
+    .partners-login__items {
+      padding: 36px 0;
+    }
+    img {
+      max-width: 70%;
+    }
   }
 }
