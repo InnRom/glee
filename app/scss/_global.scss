@@ -92,6 +92,25 @@ button {
   font-size: 16px;
 }
 
+.filter {
+  &__title {
+    margin-bottom: 25px;
+    @extend %dmsans-700;
+    font-size: 18px;
+    color: $title;
+    text-transform: uppercase;
+    position: relative;
+  }
+  &__title::after {
+    content: "";
+    border-bottom: 3px solid $btn;
+    width: 40px;
+    position: absolute;
+    top: 40%;
+    margin-left: 12px;
+  }
+}
+
 .pagination {
   display: flex;
   justify-content: center;

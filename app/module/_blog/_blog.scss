@@ -1,5 +1,5 @@
 .blog {
-  padding: 110px;
+  padding: 110px 0;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -60,8 +60,152 @@
 
 .blog__aside {
   width: 270px;
+
+  .filter-search {
+    &__form {
+      display: flex;
+    }
+    &__input {
+      border: 2px solid $top;
+      border-radius: 5px;
+      width: 220px;
+      height: 50px;
+      padding: 0 5px 0 15px;
+      outline: none;
+    }
+    &__btn {
+      width: 50px;
+      height: 50px;
+      background-color: $top;
+      border-radius: 5px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -4px;
+    }
+  }
+  .filter-post {
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    &__image {
+      height: 70px;
+      width: 70px;
+    }
+    &__info {
+      margin-left: 15px;
+    }
+    &__text {
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: $text;
+    }
+    &__span {
+      text-transform: uppercase;
+      color: #9a9a9a;
+      font-size: 12px;
+    }
+  }
 }
+
+.filter-category {
+  margin-top: 55px;
+  &__label {
+    cursor: pointer;
+  }
+  &__input {
+    @extend %checkbox-hidden;
+    &:checked + .filter-category__checkbox {
+      background-color: $top;
+      border-radius: 7px;
+    }
+  }
+  &__checkbox {
+    display: flex;
+    justify-content: space-between;
+    color: $title;
+    padding: 15px;
+  }
+}
+.filter-item {
+  margin-bottom: 55px;
+}
+
 .pagination {
   justify-content: flex-start;
   padding-top: 0;
+}
+
+@media (max-width: 1200px) {
+  .blog {
+    padding: 60px 0;
+    .filter-category,
+    .filter-post {
+      display: none;
+    }
+    &__inner {
+      flex-direction: column;
+    }
+    &__content {
+      width: 100%;
+    }
+    &__item-images {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &__item-text {
+      max-width: 100%;
+    }
+    &__aside {
+      order: -1;
+      padding-bottom: 30px;
+      width: 100%;
+    }
+    .filter-search {
+      &__input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .blog {
+    &__item-info {
+      width: 210px;
+      height: 54px;
+      font-size: 10px;
+      padding: 1px 20px;
+      transform: translateY(-54px);
+    }
+    &__item-links {
+      width: 150px;
+      height: 40px;
+    }
+    &__item-title {
+      font-size: 25px;
+      padding: 25px 0;
+      margin-top: -60px;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .blog {
+    .pagination {
+      &__item {
+        margin-right: 0;
+      }
+      &__link {
+        padding: 10px;
+      }
+      &__next {
+        height: 44px;
+        padding: 10px;
+      }
+    }
+  }
 }
