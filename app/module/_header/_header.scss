@@ -93,13 +93,14 @@
   left: -89px;
 }
 
-.user-nav__menu {
+.user-nav__menu-btn {
   position: relative;
+  top: -24px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: $btn;
-  &-link {
+  .user-nav__menu-icon {
     position: absolute;
     top: 15px;
     left: 15px;
@@ -114,7 +115,7 @@
       background-color: #ffffff;
       transform: translateY(-200%);
       position: absolute;
-      top: 120px;
+      top: 150px;
       left: 0;
       width: 100%;
       flex-direction: column;
@@ -133,7 +134,7 @@
     &__list-item {
       width: 100%;
       text-align: center;
-      padding: 0 15px;
+      padding: 0;
     }
     &__list-link {
       font-size: 20px;
@@ -143,60 +144,41 @@
       padding: 12px 0;
     }
 
-    &__btn {
-      width: 30px;
-      height: 30px;
-      background-color: transparent;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    &__menu-btn {
       position: relative;
       padding: 0;
-      span {
-        width: 100%;
-        height: 3px;
-        background-color: $btn;
-      }
-      &::after,
-      &::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 3px;
-        background-color: $btn;
-      }
-      &::before {
-        top: 0;
-      }
-      &::after {
-        bottom: 0;
-      }
     }
   }
-  .user-nav {
-    &__menu {
-      display: none;
-    }
-    margin-left: auto;
-  }
-}
 
-@media (max-width: 500px) {
-  .header {
-    &__inner {
-      flex-wrap: wrap;
+  @media (max-width: 630px) {
+    .header {
+      padding: 20px 0;
+      .header__inner {
+        flex-direction: column;
+      }
+      .header-logo {
+        padding-bottom: 20px;
+      }
     }
   }
-  .menu {
-    order: 0;
-    &__list {
-      top: 160px;
+
+  @media (max-width: 500px) {
+    .header {
+      &__inner {
+        flex-wrap: wrap;
+      }
     }
-  }
-  .user-nav {
-    transform: translateX(0);
-    padding-right: 20px;
-    padding-top: 15px;
-    width: 100%;
+    .menu {
+      order: 0;
+      &__list {
+        top: 165px;
+      }
+    }
+    .user-nav {
+      transform: translateX(0);
+
+      padding-top: 15px;
+      width: 100%;
+    }
   }
 }
