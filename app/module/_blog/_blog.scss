@@ -191,6 +191,15 @@
       margin-top: -60px;
     }
   }
+  .partners-login {
+    height: 90px !important;
+    .partners-login__items {
+      padding: 36px 0;
+    }
+    img {
+      max-width: 70%;
+    }
+  }
 }
 
 @media (max-width: 370px) {
