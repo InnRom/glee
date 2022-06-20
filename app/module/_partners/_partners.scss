@@ -14,3 +14,28 @@
     align-items: center;
   }
 }
+
+@media (max-width: 1100px) {
+  .partners-login {
+    object-fit: contain;
+    height: 120px;
+    &__items {
+      padding-top: 0;
+      padding: 15px 0;
+    }
+    img {
+      max-width: 80%;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .partners-login {
+    &__items {
+      padding: 30px 0;
+    }
+    img {
+      max-width: 60%;
+    }
+  }
+}
