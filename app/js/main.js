@@ -10,6 +10,11 @@ $('.contact-inner__item').on('click', function(){
 
 });
 
+$('.catalog__filter-btn').on('click', function(){
+  $('.catalog__filters').slideToggle()
+
+});
+
 
 
   $('.products-slide__thumb').slick({
