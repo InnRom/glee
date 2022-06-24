@@ -34,6 +34,14 @@ $('.catalog2__filter-btn').on('click', function(){
     draggable:false,
     arrows:false,
     fade:true,
+    responsive:[
+      {
+        breakpoint: 1100,
+        settings:{
+          draggable:true,
+        }
+      },
+    ]
     
   });
 
@@ -118,6 +126,36 @@ $('.products-relate__slide').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   
+responsive:[
+      {
+        breakpoint: 1100,
+        settings:{
+
+          slidesToShow: 3,
+        }
+
+       
+      },
+      {
+        breakpoint: 930,
+          settings:{
+
+          slidesToShow: 2,
+        }
+
+      },
+      {
+        breakpoint: 600,
+          settings:{
+
+          slidesToShow: 1,
+        }
+
+      },
+
+      
+    ]
+ 
 });
 
 
